@@ -1,0 +1,32 @@
+######################
+# My Settings
+######################
+
+# Alias
+alias cls='clear'
+alias ll='ls -alF'
+
+# Set history file
+export HISTSIZE=1000000
+export HISTTIMEFORMAT="%h %d %H:%M:%S "
+PROMPT_COMMAND='history -a'
+export HISTIGNORE="ls:ll:history:w:htop:ls -la"
+
+# Man backlight
+export LESS_TERMCAP_mb=$'\e[1;32m'
+export LESS_TERMCAP_md=$'\e[1;32m'
+export LESS_TERMCAP_me=$'\e[0m'
+export LESS_TERMCAP_se=$'\e[0m'
+export LESS_TERMCAP_so=$'\e[01;33m'
+export LESS_TERMCAP_ue=$'\e[0m'
+export LESS_TERMCAP_us=$'\e[1;4;31m'
+
+# /etc/bash.bashrc
+if [ "$color_prompt" = yes ]; then
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+else
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+fi
+
+# root
+export PS1="[\[$(tput sgr0)\]\[\033[38;5;1m\]\[\033[48;5;0m\]\u\[$(tput sgr0)\]@\[$(tput sgr0)\]\[\033[38;5;2m\]\h\[$(tput sgr0)\]]:\[$(tput sgr0)\]\[\033[38;5;27m\]\w\[$(tput sgr0)\]\\$ \[$(tput sgr0)\]"
