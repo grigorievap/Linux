@@ -9,10 +9,10 @@ mkdir /opt/scripts
 ```
 
 - в /usr/lib/systemd/system создаем сервисы
---check-crlCA.service
---check-crlCA.timer
---check-letsencript.service
---check-letsencript.timer
+   - check-crlCA.service
+   - check-crlCA.timer
+   - check-letsencript.service
+   - check-letsencript.timer
 
 - релоадим демонов
 ```
