@@ -9,7 +9,7 @@ from datetime import datetime
 # Переменны
 workpath = '/opt/scripts/'
 conf = workpath + 'config.ini'
-# Настройка конфига приложение + получение данных из конфиг-файла (cred.ini)
+# Настройка конфига приложение + получение данных из конфиг-файла (config.ini)
 config = configparser.ConfigParser()
 config.read(conf, encoding = 'utf-8-sig')
 certfile = str(config.get('Vars', 'certPro'))

@@ -9,7 +9,7 @@ from datetime import datetime
 workpath = '/opt/scripts/'
 conf = workpath + 'config.ini'
 #crlfile = r"/etc/openvpn/crl.pem"
-# Настройка конфига приложение + получение данных из конфиг-файла (cred.ini)
+# Настройка конфига приложение + получение данных из конфиг-файла (config.ini)
 config = configparser.ConfigParser()
 config.read(conf, encoding = 'utf-8-sig')
 crlfile = str(config.get('Vars', 'crl'))
