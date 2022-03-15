@@ -1,9 +1,9 @@
 # Отправка сообщения об истечении сертификата в телеграм
 
 - Создаем папку и помещаем туда скрипты и конфиг:
-   -check-crlCA.py
-   -check-letsencript.py
-   -config.ini
+   - check-crlCA.py
+   - check-letsencript.py
+   - config.ini
 ```
 mkdir /opt/scripts
 ```
