@@ -1,0 +1,9 @@
+[Unit]
+Description=Get CRL days to update
+
+[Service]
+Type=simple
+ExecStart=/opt/scripts/check-crlCA.py
+
+[Install]
+WantedBy=multi-user.target
