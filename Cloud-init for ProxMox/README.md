@@ -46,6 +46,10 @@ sudo qm start 9000
 	 - bash-completion
 	~~~
 	- настраиваем /etc/bash.bashrc /root/.bashrc и т.д.
+- Выключаем машинку
+```
+sudo qm shutdown 9000
+```
 - Преобразовываем нашу машинку в шаблон
 ```
 sudo qm template 9000
