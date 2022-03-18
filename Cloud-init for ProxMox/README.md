@@ -25,6 +25,7 @@ sudo qm set 9000 --hotplug disk,network,usb,memory,cpu
 ```
 qm set 9000 --ciuser alex  --ipconfig0 ip=192.168.0.250/24,gw=192.168.0.1 --nameserver 192.168.0.1 --searchdomain 192.168.0.1 
 ```
+   
    - Пароль можно задать через опцию --cipassword 
       - Не забываем задать SSH public key через веб интерфейс или опцию --sshkey с укзанием файла
       ```
