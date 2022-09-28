@@ -4,7 +4,7 @@ Description=Execute getcrlday every day at 12:00
 [Timer]
 #OnCalendar=*-*-* 12:00:00 Europe/Moscow
 OnCalendar=*-*-* 12:00:00
-Unit=getcrlday.service
+Unit=check-crlCA.service
 
 [Install]
 WantedBy=multi-user.target
